@@ -1,0 +1,8 @@
+services:
+  oxmaint-api:
+    build: .
+    container_name: oxmaint-api
+    ports:
+      - "8001:8001"
+    environment:
+      - PYTHONPATH=/app/src

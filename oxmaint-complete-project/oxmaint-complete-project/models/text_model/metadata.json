@@ -1,0 +1,11 @@
+{
+  "model_type": "TF-IDF + LogisticRegression (binary risk)",
+  "n_samples": 150,
+  "label_counts": [
+    97,
+    53
+  ],
+  "positive_label": "abnormal(1)",
+  "note": "Predicts abnormal probability from maintenance text for fusion with sensor+image.",
+  "pr_auc_test": 1.0
+}

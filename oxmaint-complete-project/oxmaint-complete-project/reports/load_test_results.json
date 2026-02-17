@@ -1,0 +1,44 @@
+{
+  "Low Load": {
+    "total_requests": 50,
+    "successful": 50,
+    "failed": 0,
+    "success_rate": 100.0,
+    "total_time_s": 0.3218526999698952,
+    "throughput_req_s": 155.35056876849814,
+    "latency_mean_ms": 29.81770799960941,
+    "latency_p50_ms": 28.333199996268377,
+    "latency_p95_ms": 41.144004988018416,
+    "latency_p99_ms": 54.21622397669121,
+    "latency_min_ms": 19.344899978023022,
+    "latency_max_ms": 64.79649996617809
+  },
+  "Medium Load": {
+    "total_requests": 200,
+    "successful": 200,
+    "failed": 0,
+    "success_rate": 100.0,
+    "total_time_s": 2.7027750000124797,
+    "throughput_req_s": 73.99802055260854,
+    "latency_mean_ms": 255.07641449890798,
+    "latency_p50_ms": 236.57174996333197,
+    "latency_p95_ms": 481.489154996234,
+    "latency_p99_ms": 598.1799089815466,
+    "latency_min_ms": 54.347499972209334,
+    "latency_max_ms": 624.0435999934562
+  },
+  "High Load": {
+    "total_requests": 500,
+    "successful": 500,
+    "failed": 0,
+    "success_rate": 100.0,
+    "total_time_s": 6.091269499971531,
+    "throughput_req_s": 82.08469515301151,
+    "latency_mean_ms": 496.6614360017702,
+    "latency_p50_ms": 438.19684998015873,
+    "latency_p95_ms": 1088.9447049907171,
+    "latency_p99_ms": 1492.8185389831194,
+    "latency_min_ms": 64.678399998229,
+    "latency_max_ms": 1872.6405000197701
+  }
+}
