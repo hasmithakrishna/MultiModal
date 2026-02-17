@@ -1,21 +1,13 @@
 #!/usr/bin/env python3
-"""
-Build a dataset manifest describing source, modality, license notes,
-and whether data is synthetic vs real.
-Writes: data/manifest.json
-"""
 import json
 from pathlib import Path
 from loguru import logger
-
-
 def find_repo_root(start: Path) -> Path:
     start = start.resolve()
     for p in [start] + list(start.parents):
         if (p / "src").exists():
             return p
     return Path(__file__).resolve().parents[2]
-
 
 def list_files(base: Path, exts=None, limit=50):
     if not base.exists():
@@ -29,7 +21,6 @@ def list_files(base: Path, exts=None, limit=50):
                 if len(out) >= limit:
                     break
     return out
-
 
 def main():
     repo_root = find_repo_root(Path(__file__).parent)
@@ -79,8 +70,9 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
-    logger.success(f"✓ Wrote manifest: {out_path}")
+    logger.success(f" Wrote manifest: {out_path}")
 
 
 if __name__ == "__main__":
     main()
+
